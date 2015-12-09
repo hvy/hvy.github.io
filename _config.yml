@@ -4,10 +4,14 @@
 permalink:           pretty
 relative_permalinks: true
 
+pages_list:
+  About: '/about'
+  Archive: '/archive'
+
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Hiroyuki Vincent Yamazaki
+tagline:             Blog by Hiroyuki Vincent Yamazaki
+url:                 http://hvy.github.io
 paginate:            1
 baseurl:             ""
 
@@ -20,11 +24,11 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Hiroyuki Vincent Yamazaki
+  url:               https://twitter.com/hvy_jp
+  email:             hiroyuki.vincent.yamazaki@gmail.com
 
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/hvy/
