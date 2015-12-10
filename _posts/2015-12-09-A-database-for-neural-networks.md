@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Database for Neural Networks
+tags: [Neural Networks]
 ---
 
 ## All this Neural Network Terminology...
