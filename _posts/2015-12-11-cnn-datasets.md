@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Convolutional Neural Networks, Part 1
-tags: [Convolutional Neural Networks, CNN, Explanation]
+title: Convolutional Neural Networks, CNN - Preparation
+tags: [Convolutional Neural Networks, CNN]
 ---
 
-## Example: Convolutional Neural Networks, CNN
-This article will explain how convolutional neural networks, CNN work using a few examples. There are many tutorials out there but most of them only uses the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset available at the homepage of Yann LeCun. Let's try to be different, and down the rabbit-hole we go.
+## Preparation
 
-## Datasets
+### Datasets
+There are many tutorials out there but most of them only uses the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset available at the homepage of Yann LeCun. Let's try to be different, and down the rabbit-hole we go.
 
 ### 1-channel grayscale, MNIST
 MNIST is a dataset based on [National Institute of Standards and Technology, NIST](http://srdata.nist.gov/gateway/gateway?keyword=handwriting+recognition) containing a set of handwritten single-digits digits, 60000 for training and another 10000 for testing (testing the trained network model).
@@ -17,15 +17,3 @@ The MNIST dataset is well suited for explaining CNNs since it only contains a si
 ### 3-channel RGB
 
 as an example and/or uses a library to explain the network model. After reading this article you will hopefully be able to implement a simple CNN. It assumes that you have a basic knowledge of simple multilayered perceptrons and that you're familiar with forward and backward propagation.
-
-## Input
-
-## Output
-
-## High-Level Architecture
-
-## Low-Level Architecture
-
-### Convolutional
-
-### Pooling
