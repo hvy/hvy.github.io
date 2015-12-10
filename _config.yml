@@ -9,8 +9,8 @@ pages_list:
   Archive: '/archive'
 
 # Setup
-title:               Research & Tech Blog
-tagline:             Tech
+title:               An Engineer's Blog
+tagline:             A Research and Tech Blog by Hiroyuki Vincent Yamazaki
 url:                 https://hvy.github.io
 baseurl:             ""
 
