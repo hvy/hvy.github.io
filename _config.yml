@@ -1,18 +1,17 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-#permalink:           pretty
-#relative_permalinks: true
+gems:                [jekyll-paginate]
+permalink:           pretty
+paginate:            5
+paginate_path:       "page:num"
 
 pages_list:
   About: '/about'
   Archive: '/archive'
 
 # Setup
-title:               Hiroyuki Vincent Yamazaki
-tagline:             Blog by Hiroyuki Vincent Yamazaki
-url:                 http://hvy.github.io
-#paginate:            1
+title:               Research & Tech Blog
+tagline:             Tech
+url:                 https://hvy.github.io
 baseurl:             ""
 
 # Assets
@@ -31,4 +30,4 @@ author:
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/hvy/
+  repo:              https://github.com/hvy
