@@ -9,7 +9,7 @@ I am not sure how much time I can dedicate to this blog due the the research tha
 
 For more info about what I do, please visit my [homepage](http://www.hiroyukivincentyamazaki.com) or send me a [mail](mailto:hiroyuki.vincent.yamazaki@gmail.com).
 
-Thanks for reading!
-
 #### 日本人？
-はい、そうです。「日本語がじゃないとわけがわからん」という方がいらっしゃいましたら翻訳するので、[こちらまでご連絡](mailto:hiroyuki.vincent.yamazaki@gmail.com)ください。If there is a request for Japanese posts, tell me and I will translate whatever requested.
+はい、そうです。もし「日本語じゃないとわけがわからん」という方がいらっしゃいましたら翻訳をするので、[こちらまでご連絡](mailto:hiroyuki.vincent.yamazaki@gmail.com)ください。If there is a request for Japanese posts, I will translate whatever requested.
+
+Thanks for reading!
