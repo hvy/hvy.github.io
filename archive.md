@@ -10,5 +10,5 @@ title: Archive
     {% for post_tag in post.tags %}
       {{post_tag}} &nbsp;
     {% endfor %}
-  {% endfor %}
+  {% endif %}
 {% endfor %}

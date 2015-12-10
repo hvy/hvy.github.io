@@ -1,8 +1,8 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+#permalink:           pretty
+#relative_permalinks: true
 
 pages_list:
   About: '/about'
@@ -12,7 +12,7 @@ pages_list:
 title:               Hiroyuki Vincent Yamazaki
 tagline:             Blog by Hiroyuki Vincent Yamazaki
 url:                 http://hvy.github.io
-paginate:            1
+#paginate:            1
 baseurl:             ""
 
 # Assets

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Started blog
+tags: []
 ---
 
 ## Hi,
