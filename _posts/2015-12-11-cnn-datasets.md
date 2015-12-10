@@ -15,5 +15,3 @@ MNIST is a dataset based on [National Institute of Standards and Technology, NIS
 The MNIST dataset is well suited for explaining CNNs since it only contains a single channel, i.e. a grayscale where a regular image usually contains three channels defined by the RGB model. We proceed mainly with the RGB model.
 
 ### 3-channel RGB
-
-as an example and/or uses a library to explain the network model. After reading this article you will hopefully be able to implement a simple CNN. It assumes that you have a basic knowledge of simple multilayered perceptrons and that you're familiar with forward and backward propagation.
