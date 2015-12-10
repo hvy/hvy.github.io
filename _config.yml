@@ -10,7 +10,7 @@ pages_list:
 
 # Setup
 title:               Hiroyuki Vincent Yamazaki
-tagline:             Reserach and Dev Blog by Hiroyuki Vincent Yamazaki
+tagline:             Blog by Hiroyuki Vincent Yamazaki
 url:                 http://hvy.github.io
 paginate:            1
 baseurl:             ""
