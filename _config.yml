@@ -9,8 +9,8 @@ pages_list:
   Archive: '/archive'
 
 # Setup
-title:               Yet Another Engineer's Blog
-tagline:             A Research / Tech Blog by Hiroyuki Vincent Yamazaki
+title:               greatConvensions 
+tagline:             A Coding/Research/General Blog by Hiroyuki Vincent Yamazaki
 url:                 https://hvy.github.io
 baseurl:             ""
 
