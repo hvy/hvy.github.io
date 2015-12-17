@@ -8,14 +8,14 @@ tags: [Git, GitHub]
 You're somewhat familiar with navigating the GitHub homepage and reading StackOverflow.
 
 ## StackOverflow, But Then?
-*StackOverflow* helps you solve all kinds of programming problems, but that of course is not always the case. You might need to implement that poorly documented library only to find out that there are just too many issues that are hard to debug, answers can't be found in any forum and you can't afford to create a new thread on StackOverflow waiting for it neither. The next stop might be *GitHub*. More precisely its search bar.
+*StackOverflow* helps you solve all kinds of programming problems, but that of course is not always the case. You might need to implement that poorly documented library only to find out that there are just too many issues that are hard to debug, answers can't be found in any forum and you can't afford to create a new thread on StackOverflow waiting for it neither. The next stop could be *GitHub*. More precisely its search bar.
 
 ## GitHub Search Bar
 GitHub has a powerful *search* tool that let's one **find repositories, pull requests, users, issues and even source code lines**. All this before the bats get out of hell [[1](#references)].
 
 ![GitHubSearchBar](/assets/2015-12-18-searchbar.png)
 
-Let's talk about this search bar. Learning how to properly use it might help you implement that poorly documented library. What's really neat is that it allows you to search directly in the source code of all the repositories to **see how others have written their code in a similar situation which you might be stuck in**.
+Let's talk about this search bar. Learning how to properly use it might help you implement that poorly documented library. What's really neat is that it allows you to search directly in the source code of all the repositories to **see how others have written their code in a similar situation in which you are stuck in**.
 
 ### How To Use It
 
@@ -38,7 +38,12 @@ For more advanced queries, search for an empty string to get the to [main search
 It is worth mentioning that a single query cannot be longer than 256 characters and that it cannot consist of more than 5 logical AND, OR or NOT operators. Also, queries are by default incasesensitive.
 
 ### How It Works
-There are on average 300 search request per minute to the GitHub servers and the handling of all these are backed by the cloud based RESTful search engine [Elasticsearch](https://www.elastic.co/use-cases/github). They manage the 4 million users and the over 8 million repositories comprising over 2 billion documents that need to be indexed for performance, i.e. short query-request to response time. As soon as a repository is being pushed to, the new data is immediately available for search and thus needs to be indexed. This is done by the 120 GB large 128 shards. For more details on how this is carried out, please refer to [Elasticsearch's GitHub Page](https://www.elastic.co/use-cases/github) or [this interview](http://exploringelasticsearch.com/github_interview.html#ch-githubinterview) with the GitHub developers discussing the scaling of the data (there is also a [link to the recording](https://soundcloud.com/andrewvc-1/github-interview-edited)).
+There are on average 300 search request per minute to the GitHub servers and the handling of all these are backed by the cloud based RESTful search engine [Elasticsearch](https://www.elastic.co/use-cases/github). They manage the 4 million users and the over 8 million repositories comprising over 2 billion documents that need to be indexed for performance, i.e. short query-request to response time. As soon as a repository is being pushed to, the new data is immediately available for search and thus needs to be indexed. This is done by the 120 GB large 128 shards. For more details on how this is carried out, please refer to [Elasticsearch's GitHub Page](https://www.elastic.co/use-cases/github) or [this interview](http://exploringelasticsearch.com/github_interview.html#ch-githubinterview) with the GitHub developers discussing the scaling of the data and its performance of the system (there is also a [link to the recording](https://soundcloud.com/andrewvc-1/github-interview-edited)).
+
+## Conclusions
+While going though trending repositories on GitHub might be a good read, one can use the search tool to find specific pieces of code, querying all of the 2 billion documents that is available on GitHub; it can be used to study libraries or could help you find answers to problems that no Internet forum address. Adding the GitHub search to your box of tools might make you a better coder.
+
+Thanks for reading!
 
 ## Links
 1. [GitHub Search](https://github.com/search)
