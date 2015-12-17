@@ -4,8 +4,6 @@ title: Convolutional Neural Networks, CNN - Preparation
 tags: [Convolutional Neural Networks, CNN]
 ---
 
-## Preparation
-
 ### Datasets
 There are many tutorials out there but most of them only uses the [MNIST](http://yann.lecun.com/exdb/mnist/) dataset available at the homepage of Yann LeCun. Let's try to be different, and down the rabbit-hole we go.
 
@@ -15,3 +13,4 @@ MNIST is a dataset based on [National Institute of Standards and Technology, NIS
 The MNIST dataset is well suited for explaining CNNs since it only contains a single channel, i.e. a grayscale where a regular image usually contains three channels defined by the RGB model. We proceed mainly with the RGB model.
 
 ### 3-channel RGB
+N/A
