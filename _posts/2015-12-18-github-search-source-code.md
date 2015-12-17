@@ -4,25 +4,28 @@ title: Write Better Code - Searching on GitHub
 tags: [Git, GitHub]
 ---
 
+## Prerequisites
+You're somewhat familiar with navigating the GitHub homepage and reading StackOverflow.
+
 ## StackOverflow, But Then?
-*StackOverflow* helps you solve all kinds of programming problems, but that of course is not always the case. You might need to implement that poorly documented library only to find out that there are just too many issues that are hard to debug, answers can't be found in any Internet article and you can't afford to create a new thread on StackOverflow waiting for it neither. The next stop might be *GitHub*. More precisely its search bar.
+*StackOverflow* helps you solve all kinds of programming problems, but that of course is not always the case. You might need to implement that poorly documented library only to find out that there are just too many issues that are hard to debug, answers can't be found in any forum and you can't afford to create a new thread on StackOverflow waiting for it neither. The next stop might be *GitHub*. More precisely its search bar.
 
 ## GitHub Search Bar
 GitHub has a powerful *search* tool that let's one **find repositories, pull requests, users, issues and even source code lines**. All this before the bats get out of hell [[1](#references)].
 
 ![GitHubSearchBar](/assets/2015-12-18-searchbar.png)
 
-Let's talk about this search bar. Learning how to properly use it might help you implement that poorly documented library. What's really neat is that it allows you to search directly in the source code of all the repositories to **see how others write their code in the same situation which you might be stuck in**.
+Let's talk about this search bar. Learning how to properly use it might help you implement that poorly documented library. What's really neat is that it allows you to search directly in the source code of all the repositories to **see how others have written their code in a similar situation which you might be stuck in**.
 
 ### How To Use It
 
 #### Simple Queries
 Simply write a code snippet or any free text in the search bar and press <kbd>Enter</kbd>. You need to wrap a multi word query with `"`s to force an exact word sequence match, e.g. `"if let"` to find binding operations. Write `"import tensorflow"`, followed by <kbd>Enter</kbd> and then select *Code* as the category and *Python* as the language in the results page to search for files using [TensorFlow](https://www.tensorflow.org) for instance, the machine learning framework from Google.
 
-It is as previously mentioned possible to search for repositories given names, pull requests, users and issues as well.
+It is as previously mentioned possible to search for repositories given names, pull requests, users and issues as well. Let's look at more examples.
 
 #### Advanced Queries
-More sophisticated queries can be composed using a query syntax. Below are some examples.
+More sophisticated queries can be composed using a query syntax.
 
 1. [`stars:>1000`](https://github.com/search?q=stars%3A%3E1000&s=updated&type=Repositories) - Queries for all repositories with more than 1000 stars.
 2. [`"import tensorflow"  extension:py`](https://github.com/search?utf8=✓&q=%22import+tensorflow%22++extension%3Apy&type=Code&ref=searchresults) - Queries for all Python scripts that include *import tensorflow*.
@@ -43,4 +46,4 @@ There are on average 300 search request per minute to the GitHub servers and the
 3. [Elasticsearch - GitHub](https://www.elastic.co/use-cases/github)
 
 ## References
-1. [Bat Out Of Hell - *Inf. very fast or sudden*.](http://www.urbandictionary.com/define.php?term=Bat+Out+Of+Hell)
+[1] Urban Dictionary - Bat Out Of Hell [http://www.urbandictionary.com/define.php?term=Bat+Out+Of+Hell](http://www.urbandictionary.com/define.php?term=Bat+Out+Of+Hell)
