@@ -10,7 +10,7 @@ tags: [Git, GitHub]
 ## The GitHub Search Bar
 GitHub has a powerful *search* tool that let's you **find repositories, pull requests, users, issues and even lines in all of the source code** that's available. All this before the bats get out of hell [[1](#References)].
 
-![GitHubSearchBar](2015-12-18-searchbar.png)
+![GitHubSearchBar](/assets/2015-12-18-searchbar.png)
 
 Let's talk about this search bar. Learning how to properly use it might help you implement that poorly documented library. What's really neat is that you can search directly in the source code of all the repositories to **see how others write their code in the same situation which you might be stuck in**.
 
