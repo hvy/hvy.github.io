@@ -8,33 +8,64 @@ tags: [Git, Version Control, Version Control Systems, VC, VCS]
 
 I have been using Git for quite a while but never really understood what it does under the hood. The [GitHub Universe 2015 videos](https://www.youtube.com/user/github/playlists) that were made available on YouTube this February reminded me of that fact, so I spent a couple of hours trying to understand how it does all that magic.
 
-### Git
+## Git
 
-*Git* is a program first developed by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) and the Linux kernel team in 2005, a Version Control System (VCS) used to handle file history.
+*Git* is a program first developed by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) and the Linux kernel team in 2005, a [Distributed Version Control System](https://en.wikipedia.org/wiki/Distributed_version_control) to handle file history.
 
-You can run it like this
+With a VCS, you can create snapshots of files at different times and jump back and forth between them. Git achieves this more or less by reading and writing to files in a directory called `.git/`. This directory is created for each project when running `git init` or `git clone`.
+
+You can run Git like any other Shell program.
 
 ```bash
 git <command>
 ```
 
-With Git, you can create snapshots of files at different times and jump back and forth between them. If you then decide to share the files with other people, you could either use Dropbox or hos it on *GitHub*. The [Git project for instance is hosted on GitHub](https://github.com/git/git). Note that Git and GitHub are completely different things. Git is a software and GitHub is a hosting service.
+Each version of a file is stored as a [blob (Binary Large Object)](https://en.wikipedia.org/wiki/Binary_large_object) in the local filesystem and each snapshot of a file or files is stored in a wha'ts called commit. A commit holds refernces to blobs included in the snaphost (and other information such as the author, date, commit message and a reference to the parent commit(s)). Again, you can see how these files are managed by looking at the contents of the files in `.git/`, they often contain human readable plain text.
 
-### Git
+This is the initial content of the `.git/` directory after running the init command.
+
+```
+.git
+├── HEAD                          // Contains the path to the current branch
+├── branches
+├── config                        // Contains repository configuration, e.g. the remote origin URL
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── ...
+│   └── ...
+├── info
+│   └── exclude
+├── objects                       // Contains all object files such as blobs and commits
+│   ├── info
+│   └── pack
+└── refs                          // Contains the master copy of all refs, e.g. the branches and stashes
+    ├── heads
+    └── tags
+```
+
+If you decide to share the files with other people, you could of course use Dropbox but, using *GitHub* is probably a smarter idea. The [Git project for instance is hosted on GitHub](https://github.com/git/git). Note that Git and GitHub are completely different things. Git is a software and GitHub is a hosting service.
+
+### References
 
 This book, [Pro Git](https://git-scm.com/book/en/v2) was more than enough for me. I did not read every chapter but maybe half of them to feel more confident in working wth Git and dealing with its what used to be horrifying terror.
 
-## Survey
+A more datailed explanation of the contents of the Git project directory can be found [here](http://schacon.github.io/git/gitrepository-layout.html), including the files that aren't initially created. The article also addresses the deprecation of `.git/branches`.
 
-I held a small talk introducing the basic concepts of Git last month.
+## Slides
+
+I held a small talk introducing the basic concepts of Git last month after reading Pro Git at my working place. It was really about the basics, similar to what I've written in previously in this post but covers the following topics.
 
 - Version Control (VC)
 - Git
   - Woriking directory / Index / Repository
   - Commits and what they consist of
-  - Branches, and other pointers to commits
+  - Branches and other pointers to commits
   - Files, blobs and references
 
-The most fundamental concepts of Git such as the commits and how these snapshots are stored and what they consist of. What I don't discuss are commands such as `reset` and `rebase`.
-
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/xHcYEFWGIHnpBp" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"></div>
+
+## Other
+
+The motivation behind the development of Git was that the Linux Kernel team couldn't continue to use BitKeeper, another Version Control System (VCS) due to some trouble with the owners (Wikipeia: They revere engineered the BitKeeper protocols). They simply descided to create their own.
