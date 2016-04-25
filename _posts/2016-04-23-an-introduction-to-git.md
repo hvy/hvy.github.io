@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: An Introduction to Git
 tags: [Git, Version Control, Version Control Systems, VC, VCS]
