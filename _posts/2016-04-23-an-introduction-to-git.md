@@ -47,9 +47,9 @@ This is the initial content of the `.git/` directory after running the init comm
 
 If you decide to share the files with other people, you could of course use Dropbox, but, *GitHub* is probably a smarter idea. The [Git project for instance is hosted on GitHub](https://github.com/git/git). Note that Git and GitHub are two completely different things. Git is a software and GitHub is a hosting service.
 
-### Recommended Read
+### Recommended Reads
 
-If you are interested, this book, [Pro Git](https://git-scm.com/book/en/v2) is probably all you need.. I did not read every chapter but maybe half of them to feel more confident in working wth Git and dealing with its what used to be horrifying terror.
+If you are interested, this book, [Pro Git](https://git-scm.com/book/en/v2) is probably all you need. I did not read every chapter but maybe half of them to feel more confident in working wth Git and dealing with its what used to be horrifying terror.
 
 A more datailed explanation of the contents of the Git project directory can be found [here](http://schacon.github.io/git/gitrepository-layout.html), including the files that aren't initially created. The article also addresses the deprecation of `.git/branches`.
 
